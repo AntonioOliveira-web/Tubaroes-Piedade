@@ -3,6 +3,7 @@
 # Importa as funções do crm.py e do motor_solar.py
 from crm import coletar_dados
 from motor_solar import *  # O * serve pra importar todas as funções do arquivo
+from proposta import imprimir_relatorio
 
 
 # Função principal
@@ -43,6 +44,18 @@ def main():
     print(f"Custo total: R$ {custo_total}")
     print(f"Economia mensal: R$ {economia}")
     print(f"Payback estimado: {payback} meses")
+    
+    print(imprimir_relatorio(
+        nome_cliente,
+        "On-Grid",
+        pot_pico,
+        qtd_paineis,
+        preco_painel,
+        inversor,
+        mao_obra,
+        economia,
+        payback
+    ))
 
 
 # Inicia a função
