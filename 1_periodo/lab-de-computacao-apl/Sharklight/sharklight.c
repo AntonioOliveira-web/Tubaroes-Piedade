@@ -3,9 +3,9 @@
 
 #include <IRremote.h>
 
-#define PIR_PIN 8
+#define PIR_PIN 4
 #define IR_PIN 11
-#define LED_PIN 13
+#define LED_PIN 10
 
 IRrecv irrecv(IR_PIN);
 
@@ -27,12 +27,12 @@ void loop() {
 
         if (!luz_lig) {
             luz_lig = true;
-            digitalWrite(LED_PIN, HIGH);
+            digitalWrite(LED_PIN, LOW);
         }
     }
 
     if (luz_lig && (millis() - ult_mov >= temp_apagar)) {
         luz_lig = false;
-        digitalWrite(LED_PIN, LOW);
+        digitalWrite(LED_PIN, HIGH);
     }
 }
