@@ -1,4 +1,4 @@
-# proposta.py
+# proposta.py by Juan (Iz4nmura)
 from crm import coletar_dados
 from motor_solar import *
 
