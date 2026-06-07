@@ -47,3 +47,8 @@ def calc_economia(consumo_mensal, tarifa):
 # Função que calcula o payback
 def calc_payback(custo_total, economia_mensal):
     return custo_total / economia_mensal
+
+
+# Função que calcula o banco de baterias
+def calc_banco_bat(consumo_diario, autonomia, tensao):
+    return (consumo_diario * 1000 * autonomia) / (tensao * 0.80)
