@@ -1,4 +1,6 @@
-#CLASSES PARA CADA TIPO DE PRODUTO PARA CRIAR O CATALAGO
+# catalogo_poo.py by Antônio (AntonioOliveira-Web)
+
+# #CLASSES PARA CADA TIPO DE PRODUTO PARA CRIAR O CATALAGO
 
 class PainelSolar:
     def __init__(self, modelo, potencia_kw, preco):
